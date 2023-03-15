@@ -20,16 +20,42 @@ body{
 
 nav{
     grid-area: nav;
-    background-color: blue;
+    -background-color: blue;
     display: grid;
+    padding-right: 40px;
 }
 .menu-conteiner{
     background-color: darkred;
+    border-radius: 35px;
+    display: grid;
+    grid-template-rows: 120px 1fr 80px;
+    overflow: hidden;
+}
+
+.icon{
+    background-color: darkseagreen;
+}
+
+.menu{
+    background-color: deeppink;
+}
+
+.guide{
+    background-color: forestgreen;
 }
 
 header{
     grid-area: header;
     background-color: blueviolet;
+    display: grid;
+    place-items: end;
+}
+
+.avatar-conteiner{
+    background-color: grey;
+    height: 100%;
+    width: 110px;
+
 }
 
 main{
