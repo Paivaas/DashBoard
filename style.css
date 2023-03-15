@@ -1,0 +1,43 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    padding: 40px;
+    grid-template-areas: 
+        "nav header"
+        "nav main"
+        "nav footer";
+        grid-template-columns: 400px 1fr;
+        grid-template-rows: 50px 1fr 50px;
+        
+}
+
+nav{
+    grid-area: nav;
+    background-color: blue;
+    display: grid;
+}
+.menu-conteiner{
+    background-color: darkred;
+}
+
+header{
+    grid-area: header;
+    background-color: blueviolet;
+}
+
+main{
+    grid-area: main;
+    background-color: chartreuse;
+}
+
+footer{
+    grid-area: footer;
+    background-color: darkcyan;
+}
