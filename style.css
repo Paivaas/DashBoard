@@ -60,9 +60,32 @@ header{
 
 main{
     grid-area: main;
+    display: grid;
+    grid-template-areas: 
+        "title title"
+        "card card"
+        "graphic post";
     background-color: chartreuse;
+    grid-template-rows: 70px 1fr 2fr;
+    grid-template-columns: 1fr 300px;
 }
 
+.title-conteiner{
+    grid-area: title;
+    background-color: khaki;
+}
+.card-conteiner{
+    grid-area: card; 
+    background-color: purple;
+}
+.graphic-conteiner{
+    grid-area: graphic;
+    background-color: salmon;
+}
+.post-conteiner{
+    grid-area: post;
+    background-color: cornflowerblue;
+}
 footer{
     grid-area: footer;
     background-color: darkcyan;
